@@ -1,0 +1,191 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(10 , 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas: 
+      "h1 h2 h3 h4 h5 h6 h7 h8 h9 h10"
+      "b1 b2 b3 b4 b5 b6 b7 b8 b9 b10";
+    
+}
+#glasses{
+    display:none;
+}
+
+.wineList:hover{
+    color: #e0115f;
+}
+
+#italy{
+    display: none;
+}
+
+a{
+    justify-self: center;
+}
+
+.logo{
+    display: grid;
+    grid-column: 5/7;
+    justify-self: center;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    height:130px;
+    width: 130px;
+    background-color:#4085f5;
+    color: white;
+    letter-spacing: 2px;
+    align-content: center;
+}
+
+.logo:hover{
+    background-color: #ff69b4;
+
+}
+#content{
+    display: grid;
+    font-family: 'Oswald';
+    font-size: 20px;
+}
+
+.menuNav{
+    font-family: 'Oswald';
+    font-size: 20px;
+    display: grid;
+    grid-area: h2;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.contactNav{
+    font-family: 'Oswald';
+    font-size: 20px;
+    display: grid;
+    grid-area: h8;
+    align-content: center;
+    
+    justify-content: center;
+}
+
+.resNav{
+    font-family: 'Oswald';
+    font-size: 20px;
+    display: grid;
+    grid-area: h9;
+    
+    align-content: center;
+    
+    justify-content: center;
+}
+
+.wineNav{
+    font-family: 'Oswald';
+    font-size: 20px;
+    display: grid;
+    grid-area: h3;
+    align-content: center;
+    
+    justify-content: center; 
+}
+.info{
+    display: grid;
+
+grid-template-columns: repeat(9, 1fr);
+
+grid-template-rows: repeat(2, 1fr);
+
+grid-column: 1/10;
+}
+
+.highlight{
+    background-color: #ff69b4;
+
+}
+
+.menuPage{
+    display: grid;
+    grid-column: 4/8;
+}
+
+.winePage{
+    grid-column: 4/8;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ff69b4;
+}
+
+#top, #bottom, #left, #right {
+	background: #4085f5;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 20px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 20px;
+		}
+		#top { top: 0; }
+        #bottom { bottom: 0; }
+        
+h1{
+    display: grid;
+    font-family: 'Roboto';
+    font-size: 24px;
+    color: #ff69b4;
+    text-align: center;
+}
+
+ul{
+    display: grid;
+    align-items: center;
+}
+
+li{
+    display: grid;
+    font-family: 'Lato';
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 2px;
+}
+.contact{
+    grid-column: 3/5;
+}
+#contact{
+    display: grid;
+    grid-column: 3/5 !important;
+    font-family: 'Lato';
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+#map{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+#tock{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Lato';
+}
