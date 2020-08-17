@@ -1,8 +1,9 @@
 const Reserve=()=>{
     const reservations = document.createElement('div');
+    reservations.id='tock';
     reservations.innerHTML= 
     `
-        <p id ='tock'> To make a reservation, please visit us on Tock </p>
+        <p> To make a reservation, please visit us on Tock </p>
     `
     return reservations;
 }
