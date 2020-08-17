@@ -166,26 +166,59 @@ li{
     padding-bottom: 2px;
 }
 .contact{
-    grid-column: 3/5;
+    grid-column: 3/9;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px auto 50px auto;
 }
+
 #contact{
     display: grid;
-    grid-column: 3/5 !important;
     font-family: 'Lato';
     list-style-type: none;
-    text-align: center;
-    padding-bottom: 2px;
 }
 
 #map{
-    display: grid;
-    align-content: center;
-    justify-content: center;
+    display: none;
 }
 
 #tock{
     display: grid;
+    grid-column: 4/8;
     align-content: center;
     justify-content: center;
+    font-family: 'Lato';
+}
+
+#name{
+    grid-column: 1/3;
+    grid-row: 1;
+    text-align: left;
+
+}
+
+#address{
+    grid-column: 1/3;
+    grid-row: 2;
+}
+
+#directionsHeader{
+    grid-column: 1/3;
+    grid-row: 3;
+    text-align: left;
+}
+
+#directions{
+    grid-column: 1/3;
+    grid-row: 4;
+}
+
+#google{
+    border: 0;
+    grid-column: 4/7;
+    padding-top: 20px;
+}
+
+p{
     font-family: 'Lato';
 }
