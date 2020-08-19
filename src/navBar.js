@@ -1,14 +1,3 @@
-// const Header=()=>{
-//     const navBar = document.createElement('div');
-//     navBar.className='navBar';
-//     navBar.innerHTML= 
-//     `<a href="menu" id='menutab' data-navigation='Menu'>Menu</a> 
-//     <a href="reserve" id='reservationstab' data-navigation='Reserve'>Reserve</a>
-//     <a href="contact" id='contacttab' data-navigation='Contact'>Contact</a>`
-    
-//     return navBar;
-    
-// }
 
 const menuNav=()=>{
     const menuNav = document.createElement('div');

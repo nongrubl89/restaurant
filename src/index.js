@@ -2,7 +2,7 @@ import {menuNav,resNav, contactNav, wineNav} from './navBar'
 import {Menu} from './menu';
 import {Reserve} from './reservations';
 import {Contact} from './contact';
-import {Wine} from './wine'
+import {Wine, displayWines} from './wine'
 
 
 const appendHeader=()=>{
@@ -31,21 +31,7 @@ const navBarEvents=(event)=>{
   } 
 }
 
-const displayWines=()=>{
-    const wineList = document.querySelectorAll('[data-wine]');
-    wineList.forEach(wine=>wine.addEventListener('click', function(event){
-        let nav = event.target.dataset.wine;
-        const showGlasses = document.getElementById('glasses');
-        const italian = document.getElementById('italy');
-       switch (nav){
-           case 'glasses': showGlasses.style.display=(showGlasses.style.display=='grid')?'none':'grid';
-           break;
-           case 'italian': italian.style.display = (italian.style.display=='grid')?'none':'grid';
-           break;
-       }
-        
-    }));
-}
+
 
 
 appendHeader();

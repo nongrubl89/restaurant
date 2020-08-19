@@ -20,7 +20,21 @@ const Wine=()=>{
     
 
 
-
+const displayWines=()=>{
+    const wineList = document.querySelectorAll('[data-wine]');
+    wineList.forEach(wine=>wine.addEventListener('click', function(event){
+        let nav = event.target.dataset.wine;
+        const showGlasses = document.getElementById('glasses');
+        const italian = document.getElementById('italy');
+       switch (nav){
+           case 'glasses': showGlasses.style.display=(showGlasses.style.display=='grid')?'none':'grid';
+           break;
+           case 'italian': italian.style.display = (italian.style.display=='grid')?'none':'grid';
+           break;
+       }
+        
+    }));
+}
 
 
 //disregard this function for now
@@ -28,4 +42,4 @@ const Wine=()=>{
 //     para1.classList.add(para2);
 // }
 
-export {Wine}
+export {Wine, displayWines}
